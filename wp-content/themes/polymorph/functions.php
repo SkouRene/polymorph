@@ -1,10 +1,9 @@
 <?php
 
-	define('TEMPPATH',get_template_directory_uri());
+	define('TEMPPATH',get_template_directory_uri());
 	define('IMGPATH',TEMPPATH."/images");
-	
-	require_once('polymorph-options.php');
-	
+	require_once('polymorph-options.php');
+	require_once(TEMPPATH."/widgets/foundation-orbit-slider/wp-orbit-slider.php");	require_once(TEMPPATH."/widgets/polymorph-image-widgets/image-widget.php");	require_once(TEMPPATH."/widgets/polymorph-post-plus/advanced-recent-posts-widget.php");
 	require_once ('menus/foundation-nav-bar.php');
 
 if (!is_admin()){
