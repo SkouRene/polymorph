@@ -18,3 +18,10 @@ wp-trackback.php
 xmlrpc.php
 wp-includes
 wp-admin
+wp-content/index.php
+wp-content/uploads
+wp-content/upgrade
+wp-content/themes/index.php
+wp-content/plugins/gravityforms
+wp-content/plugins/wordpress-importer
+wp-content/plugins/index.php

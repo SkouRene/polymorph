@@ -1,0 +1,159 @@
+/*
+ Theme Name: Polymorph
+ Theme URI: http://reneskou.tumblr.com/
+ Description: A responsive theme based on foundation css framework by zurb
+ Version: 1.0
+ Author: René Skou
+ Author URI: https://twitter.com/ReneSkou
+ */
+
+/*
+* FOUNDATION OVERRIDES
+*
+***************************************************************************************************************************************************************************/
+body { background:white; font-family: Arial, sans-serif; font-weight: normal; font-style: normal; font-size: 14px; line-height: 1; color: #222222;}
+.row { width:980px;}
+/* Base Type Styles Using Modular Scale ---------------------- */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, th, td { margin: 0; padding: 0; font-size: 14px; direction: ltr; }
+
+p { font-family: inherit; font-weight: normal; font-size: 14px; line-height: 1.6; margin-bottom: 17px; }
+p.lead { font-size: 17.5px; line-height: 1.6; margin-bottom: 17px; }
+
+aside p { font-size: 13px; line-height: 1.35; font-style: italic; }
+
+h1, h2, h3, h4, h5, h6 { font-family:  "Trebuchet MS", Helvetica, Arial, sans-serif; font-weight: bold; font-style: normal; color: #222222; line-height: 1.1; margin-bottom: 14px; margin-top: 14px; }
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { font-size: 60%; color: #6f6f6f; line-height: 0; }
+
+h1 { font-size: 44px; }
+
+h2 { font-size: 37px; }
+
+h3 { font-size: 27px; }
+
+h4 { font-size: 23px; }
+
+h5 { font-size: 17px; }
+
+h6 { font-size: 14px; }
+
+hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 22px 0 21px; height: 0; }
+
+/* 
+* THEME STYLES
+*
+***************************************************************************************************************************************************************************/
+#poly-header {background:url('images/backgrounds/bg-main.png') repeat-x top left;border-bottom:2px dashed #C9C9C9;margin-bottom:20px;}
+#poly-footer,#poly-footer .row {color:#ffffff;}
+#poly-footer {padding:0px 0px 20px; min-height: 200px;background:#2795b6 url('images/backgrounds/bg-main.png') repeat-x top left;}
+#poly-footer h4 {color:#ccc;}
+.first {margin:10px 0px 0px;}
+article {padding:0px 0px 20px;}
+.post-entry {margin:0px 0px 20px;}
+.orbit-caption h1, .orbit-caption h2, .orbit-caption h3, .orbit-caption h4, .orbit-caption p, .orbit-caption {color:#ffffff;}
+.orbit-wrapper .orbit-caption {padding:10px; text-align: left;}
+.row.featured-content {margin:0px auto 20px;}
+#main-advanced-recent-posts-2 .post-entry {margin:0px 0px 60px;}
+.icon-featured:hover {color:#2ba6cb;}
+article.featured h3 {margin:20px;}
+article.featured {border:2px solid #000;padding:0px;}
+article.featured .entry {background:#000;color:#fff;padding:10px;}
+.row article.featured.row {margin:0px -15px 20px;}
+.btn-example, .btn-code {float:right;}
+.poly-code {display:none;}
+.fonticons li i {font-size:18px;}
+.fonticons {list-style: none;}
+.gform_body ul {list-style: none;}
+.gfield_label {font-weight: bold;}
+.ginput_complex input[type="text"] {margin:0px;}
+.ginput_complex  label {font-size:11px;}
+.ginput_complex {margin:0px 0px 10px;}
+/* 
+* CUSTOMS BUTTONS
+*
+***************************************************************************************************************************************************************************/
+.button.gform_button {background-color: #e9e9e9; color: #1d1d1d; border: 1px solid #c3c3c3;-webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px;}
+.button.gform_button:hover,button.gform_button:focus {background-color: #d0d0d0;}
+
+
+
+/* 
+* SIDEBAR STYLES
+*
+***************************************************************************************************************************************************************************/
+/* SUBNAVIGATION */
+.featured-sidebar ul {list-style: none;}
+.featured-sidebar ul li {border-left:3px solid #fff;}
+.featured-sidebar ul li:hover {border-left:3px solid #2795b6;}
+.featured-sidebar ul li a {	
+	background: #fff;
+  	
+	color: #555;
+	display: block;
+	font-size: 16px;
+	height: auto;
+	line-height: 1;
+	padding: 10px 20px;
+	-webkit-box-shadow: 0 1px 0 rgba(255,255,255,0.5) inset;
+	-moz-box-shadow: 0 1px 0 rgba(255,255,255,0.5) inset;
+	box-shadow: 0 1px 0 rgba(255,255,255,0.5) inset;
+	}
+.featured-sidebar ul li a:hover, .featured-sidebar ul li a:focus {background: #fff; color: #333;}
+.featured-sidebar h4 {margin:0px 0px 20px;border-bottom: 1px solid #e6e6e6;padding:0px 0px 10px;}
+.sidebara-box {padding: 0px 10px;}
+
+/* 
+* NAVIGATION STYLES
+*
+***************************************************************************************************************************************************************************/
+
+/* NAV-BAR FOUNDATION OVERRIDE */
+.nav-bar {
+    background:transparent;
+    height: 60px;
+}
+
+.nav-bar > li {
+    border-color: none;
+    border-image: none;
+    border-style: none;
+    border-width: none;
+
+}
+.nav-bar > li:last-child {
+    border-right:none;
+    
+}
+
+.nav-bar > li > a:first-child {
+    display: block;
+    font-size: 24px;
+    padding: 0 20px;
+    position: relative;
+    text-decoration: none;
+    color:#222;
+}
+.nav-bar > li:hover { background:transparent;border-bottom:5px solid transparent; }
+.nav-bar > li a:hover {color:#2795b6;}
+.flyout {top:42px;}
+ul.flyout li, .nav-bar li ul li { border-left: solid 3px #2795b6; }
+.nav-bar > li.has-flyout > a:first-child:after {border: solid 5px; border-color: #000 transparent transparent transparent;}
+
+/* FOOTER MENU*/
+#menu-footer,#menu-footer1,#menu-footer2 {list-style: none;}
+#footer-nav_menu-2 h4 {padding-left:5px;}
+#menu-footer li a,#menu-footer1 li a,#menu-footer2 li a {border-left:3px solid #2795b6; color:#ffffff;padding-left:5px;}
+#menu-footer li a:hover,#menu-footer1 li a:hover,#menu-footer2 li a:hover {border-left:3px solid #ffffff;}
+
+/* ACCORDION*/
+ul.accordion > li.active {border-top: 3px solid #2795b6;}
+
+/* 
+* MEDIA QUERIES
+*
+***************************************************************************************************************************************************************************/
+
+@media only screen and (max-width: 767px) {
+	.nav-bar {height: auto;}
+	.orbit-caption h1 {font-size:125%;}
+	.orbit-caption h3 {font-size:125%;}
+}
