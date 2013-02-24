@@ -3,21 +3,15 @@
 	define('TEMPPATH',get_template_directory_uri());
 	define('IMGPATH',TEMPPATH."/images");
 	require_once('polymorph-options.php');
-	require_once(TEMPPATH."/widgets/foundation-orbit-slider/wp-orbit-slider.php");	require_once(TEMPPATH."/widgets/polymorph-image-widgets/image-widget.php");	require_once(TEMPPATH."/widgets/polymorph-post-plus/advanced-recent-posts-widget.php");
 	require_once ('menus/foundation-nav-bar.php');
 
 if (!is_admin()){
-	wp_enqueue_script('jquery');  
-	wp_enqueue_script('foundation',TEMPPATH.'/javascripts/foundation.min.js');
-   	wp_enqueue_script('app',TEMPPATH.'/javascripts/app.js');
-	
-	
-	
+	wp_enqueue_script('jquery');  
+	wp_enqueue_script('foundation',TEMPPATH.'/javascripts/foundation.min.js');
+   	wp_enqueue_script('app',TEMPPATH.'/javascripts/app.js');
 }
 /*
- *
  *  Adds a filter to append the default stylesheet to the tinymce editor.
- *
  */
 if ( ! function_exists('tdav_css') ) {
 	function tdav_css($wp) {
@@ -202,11 +196,11 @@ if(function_exists('register_nav_menus')){
 		)
 	);
 	
-}
-
+}// check if menu item has children and add class for nav-bar on parent
+add_filter( 'wp_nav_menu_objects', 'add_has_children_to_nav_items' );function add_has_children_to_nav_items( $items ){    $parents = wp_list_pluck( $items, 'menu_item_parent');    $out     = array ();    foreach ( $items as $item )    {        in_array( $item->ID, $parents ) && $item->classes[] = 'has-flyout';        $out[] = $item;    }    return $items;}
 //	Reduce nav classes, leaving only 'current-menu-item'
 function nav_class_filter( $var ) {
-return is_array($var) ? array_intersect($var, array('current-menu-item','has-flyout')) : '';
+return is_array($var) ? array_intersect($var, array('current-menu-item','has-flyout','has-flyout')) : '';
 }
 add_filter('nav_menu_css_class', 'nav_class_filter', 100, 1);
 
